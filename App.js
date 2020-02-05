@@ -82,6 +82,7 @@ export default class App extends React.Component {
         </View>
         <View style={styles.grid}>
           <View style={styles.itemrow}>
+
             <TouchableOpacity
             style={styles.item}
             onPress= { () => {
@@ -94,6 +95,55 @@ export default class App extends React.Component {
                  color={this.scratchItemColor(0)}
               />
             </TouchableOpacity>
+            <TouchableOpacity
+            style={styles.item}
+            onPress= { () => {
+              this.scratchItem(1)
+            } }
+            >
+              <FontAwesome
+                 name={this.scratchItemIcon(1)}
+                 size={50}
+                 color={this.scratchItemColor(1)}
+              />
+            </TouchableOpacity>
+            <TouchableOpacity
+            style={styles.item}
+            onPress= { () => {
+              this.scratchItem(2)
+            } }
+            >
+              <FontAwesome
+                 name={this.scratchItemIcon(2)}
+                 size={50}
+                 color={this.scratchItemColor(2)}
+              />
+            </TouchableOpacity>
+            <TouchableOpacity
+            style={styles.item}
+            onPress= { () => {
+              this.scratchItem(3)
+            } }
+            >
+              <FontAwesome
+                 name={this.scratchItemIcon(3)}
+                 size={50}
+                 color={this.scratchItemColor(3)}
+              />
+            </TouchableOpacity>
+            <TouchableOpacity
+            style={styles.item}
+            onPress= { () => {
+              this.scratchItem(4)
+            } }
+            >
+              <FontAwesome
+                 name={this.scratchItemIcon(4)}
+                 size={50}
+                 color={this.scratchItemColor(4)}
+              />
+            </TouchableOpacity>
+
           </View>
 
         </View>
