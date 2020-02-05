@@ -46,7 +46,7 @@ export default class App extends React.Component {
     return 'circle';
   };
 
-  scratchItemColor = () => {
+  scratchItemColor = itemNumber => {
     //find right color
     if (itemArray[itemNumber] === 'lucky') {
       return "green";
@@ -82,8 +82,17 @@ export default class App extends React.Component {
         </View>
         <View style={styles.grid}>
           <View style={styles.itemrow}>
-            <TouchableOpacity>
-              
+            <TouchableOpacity
+            style={styles.item}
+            onPress= { () => {
+              this.scratchItem(0)
+            } }
+            >
+              <FontAwesome
+                 name={this.scratchItemIcon(0)}
+                 size={50}
+                 color={this.scratchItemColor(0)}
+              />
             </TouchableOpacity>
           </View>
 
