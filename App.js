@@ -59,7 +59,9 @@ export default class App extends React.Component {
   showAllItem = () => {
     //reveal all icons
     itemArray.fill('unlucky');
-    itemArray[this.state.randomNumber] == 'lucky';
+    itemArray[this.state.randomNumber] = 'lucky';
+
+
     this.forceUpdate(); 
   };
 
@@ -394,9 +396,27 @@ export default class App extends React.Component {
                 </TouchableOpacity>
           </View>
         </View>
-        <Button>
-          <Text>Show All Coupons</Text>
+
+        <Button
+          onPress={ () => {
+            this.showAllItem();
+          }}
+          full 
+          success 
+          style= {styles.button}
+        >
+          <Text style={styles.buttonText}>Show All Coupons</Text>
         </Button>
+
+        <Button
+          onPress={ () => {
+            this.reset();
+          }} 
+          full primary style= {styles.button}>
+          <Text style={styles.buttonText}>Rest</Text>
+        </Button>
+
+
     </View>
     );
   }
@@ -420,5 +440,12 @@ const styles = StyleSheet.create({
     borderWidth: 2,
     borderColor: '#000',
     minWidth: 70
+  },
+  button: {
+    marginVertical: 15
+  },
+  buttonText: {
+    color: "#fff",
+    fontSize: 18
   }
 });
