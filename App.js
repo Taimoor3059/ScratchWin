@@ -10,7 +10,8 @@ export default class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      randomNumber: ""
+      randomNumber: "",
+      timesClicked: 0
     };
   }
 
@@ -28,6 +29,12 @@ export default class App extends React.Component {
 
   scratchItem = (itemNumber) => {
     //decide lucky or unlucky
+    this.setState({timesClicked: this.state.timesClicked + 1})
+    if (this.state.timesClicked > 4) {
+      this.reset();
+    }
+    console.log(this.state.timesClicked);
+
     if (this.state.randomNumber === itemNumber) {
       itemArray[itemNumber] = "lucky";
     } else {
@@ -65,7 +72,8 @@ export default class App extends React.Component {
 
   reset = () => {
     //resets the game
-    this.setState({randomNumber: this.generateRandomNumber()},
+    this.setState({randomNumber: this.generateRandomNumber(),
+    timesClicked: 0},
       () => {
         itemArray.fill("empty");
         this.forceUpdate();
