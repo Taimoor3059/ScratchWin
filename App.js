@@ -113,10 +113,10 @@ const styles = StyleSheet.create({
   grid: {
 
   },
-  itemrow: {flexDirection='row'
+  itemrow: {flexDirection:'row'
   },
   item: {
-    alignItems="center",
+    alignItems:"center",
     padding: 10,
     borderWidth: 2,
     borderColor: '#000',
