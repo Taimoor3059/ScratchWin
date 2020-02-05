@@ -53,7 +53,7 @@ export default class App extends React.Component {
     } else if (itemArray[itemNumber] === 'unlucky') {
       return 'red'
     }
-    return 'black';
+    return 'blue';
   };
 
   showAllItem = () => {
@@ -110,4 +110,16 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
+  grid: {
+
+  },
+  itemrow: {flexDirection='row'
+  },
+  item: {
+    alignItems="center",
+    padding: 10,
+    borderWidth: 2,
+    borderColor: '#000',
+    minWidth: 70
+  }
 });
