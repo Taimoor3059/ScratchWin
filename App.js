@@ -145,9 +145,258 @@ export default class App extends React.Component {
             </TouchableOpacity>
 
           </View>
-
+          <View style={styles.itemrow}>
+            <TouchableOpacity
+              style={styles.item}
+              onPress= { () => {
+                this.scratchItem(5)
+              } }
+              >
+                <FontAwesome
+                  name={this.scratchItemIcon(5)}
+                  size={50}
+                  color={this.scratchItemColor(5)}
+                />
+              </TouchableOpacity>
+              <TouchableOpacity
+              style={styles.item}
+              onPress= { () => {
+                this.scratchItem(6)
+              } }
+              >
+                <FontAwesome
+                  name={this.scratchItemIcon(6)}
+                  size={50}
+                  color={this.scratchItemColor(6)}
+                />
+              </TouchableOpacity>
+              <TouchableOpacity
+              style={styles.item}
+              onPress= { () => {
+                this.scratchItem(7)
+              } }
+              >
+                <FontAwesome
+                  name={this.scratchItemIcon(7)}
+                  size={50}
+                  color={this.scratchItemColor(7)}
+                />
+              </TouchableOpacity>
+              <TouchableOpacity
+              style={styles.item}
+              onPress= { () => {
+                this.scratchItem(8)
+              } }
+              >
+                <FontAwesome
+                  name={this.scratchItemIcon(8)}
+                  size={50}
+                  color={this.scratchItemColor(8)}
+                />
+              </TouchableOpacity>
+              <TouchableOpacity
+              style={styles.item}
+              onPress= { () => {
+                this.scratchItem(9)
+              } }
+              >
+                <FontAwesome
+                  name={this.scratchItemIcon(9)}
+                  size={50}
+                  color={this.scratchItemColor(9)}
+                />
+              </TouchableOpacity>
+          </View>
+          <View style={styles.itemrow}>
+            <TouchableOpacity
+              style={styles.item}
+              onPress= { () => {
+                this.scratchItem(10)
+              } }
+              >
+                <FontAwesome
+                  name={this.scratchItemIcon(10)}
+                  size={50}
+                  color={this.scratchItemColor(10)}
+                />
+              </TouchableOpacity>
+              <TouchableOpacity
+              style={styles.item}
+              onPress= { () => {
+                this.scratchItem(11)
+              } }
+              >
+                <FontAwesome
+                  name={this.scratchItemIcon(11)}
+                  size={50}
+                  color={this.scratchItemColor(11)}
+                />
+              </TouchableOpacity>
+              <TouchableOpacity
+              style={styles.item}
+              onPress= { () => {
+                this.scratchItem(12)
+              } }
+              >
+                <FontAwesome
+                  name={this.scratchItemIcon(12)}
+                  size={50}
+                  color={this.scratchItemColor(12)}
+                />
+              </TouchableOpacity>
+              <TouchableOpacity
+              style={styles.item}
+              onPress= { () => {
+                this.scratchItem(13)
+              } }
+              >
+                <FontAwesome
+                  name={this.scratchItemIcon(13)}
+                  size={50}
+                  color={this.scratchItemColor(13)}
+                />
+              </TouchableOpacity>
+              <TouchableOpacity
+              style={styles.item}
+              onPress= { () => {
+                this.scratchItem(14)
+              } }
+              >
+                <FontAwesome
+                  name={this.scratchItemIcon(14)}
+                  size={50}
+                  color={this.scratchItemColor(14)}
+                />
+              </TouchableOpacity>
+          </View>
+          <View style={styles.itemrow}>
+            <TouchableOpacity
+                style={styles.item}
+                onPress= { () => {
+                  this.scratchItem(15)
+                } }
+                >
+                  <FontAwesome
+                    name={this.scratchItemIcon(15)}
+                    size={50}
+                    color={this.scratchItemColor(15)}
+                  />
+                </TouchableOpacity>
+                <TouchableOpacity
+                style={styles.item}
+                onPress= { () => {
+                  this.scratchItem(16)
+                } }
+                >
+                  <FontAwesome
+                    name={this.scratchItemIcon(16)}
+                    size={50}
+                    color={this.scratchItemColor(16)}
+                  />
+                </TouchableOpacity>
+                <TouchableOpacity
+                style={styles.item}
+                onPress= { () => {
+                  this.scratchItem(17)
+                } }
+                >
+                  <FontAwesome
+                    name={this.scratchItemIcon(17)}
+                    size={50}
+                    color={this.scratchItemColor(17)}
+                  />
+                </TouchableOpacity>
+                <TouchableOpacity
+                style={styles.item}
+                onPress= { () => {
+                  this.scratchItem(18)
+                } }
+                >
+                  <FontAwesome
+                    name={this.scratchItemIcon(18)}
+                    size={50}
+                    color={this.scratchItemColor(18)}
+                  />
+                </TouchableOpacity>
+                <TouchableOpacity
+                style={styles.item}
+                onPress= { () => {
+                  this.scratchItem(19)
+                } }
+                >
+                  <FontAwesome
+                    name={this.scratchItemIcon(19)}
+                    size={50}
+                    color={this.scratchItemColor(19)}
+                  />
+                </TouchableOpacity>
+          </View>
+          <View style={styles.itemrow}>
+            <TouchableOpacity
+                style={styles.item}
+                onPress= { () => {
+                  this.scratchItem(20)
+                } }
+                >
+                  <FontAwesome
+                    name={this.scratchItemIcon(20)}
+                    size={50}
+                    color={this.scratchItemColor(20)}
+                  />
+                </TouchableOpacity>
+                <TouchableOpacity
+                style={styles.item}
+                onPress= { () => {
+                  this.scratchItem(21)
+                } }
+                >
+                  <FontAwesome
+                    name={this.scratchItemIcon(21)}
+                    size={50}
+                    color={this.scratchItemColor(21)}
+                  />
+                </TouchableOpacity>
+                <TouchableOpacity
+                style={styles.item}
+                onPress= { () => {
+                  this.scratchItem(22)
+                } }
+                >
+                  <FontAwesome
+                    name={this.scratchItemIcon(22)}
+                    size={50}
+                    color={this.scratchItemColor(22)}
+                  />
+                </TouchableOpacity>
+                <TouchableOpacity
+                style={styles.item}
+                onPress= { () => {
+                  this.scratchItem(23)
+                } }
+                >
+                  <FontAwesome
+                    name={this.scratchItemIcon(23)}
+                    size={50}
+                    color={this.scratchItemColor(23)}
+                  />
+                </TouchableOpacity>
+                <TouchableOpacity
+                style={styles.item}
+                onPress= { () => {
+                  this.scratchItem(24)
+                } }
+                >
+                  <FontAwesome
+                    name={this.scratchItemIcon(24)}
+                    size={50}
+                    color={this.scratchItemColor(24)}
+                  />
+                </TouchableOpacity>
+          </View>
         </View>
-
+        <Button>
+          <Text>Show All Coupons</Text>
+        </Button>
     </View>
     );
   }
