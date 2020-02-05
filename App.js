@@ -60,8 +60,6 @@ export default class App extends React.Component {
     //reveal all icons
     itemArray.fill('unlucky');
     itemArray[this.state.randomNumber] = 'lucky';
-
-
     this.forceUpdate(); 
   };
 
@@ -74,6 +72,7 @@ export default class App extends React.Component {
       } 
     )
   }
+
 
   render () {
     return (
