@@ -73,13 +73,22 @@ export default class App extends React.Component {
     )
   }
 
-
-
-
   render () {
     return (
       <View style={styles.container}>
-      <Text>Scartch and Win </Text>
+
+        <View>
+          <Text>Scartch and Win </Text>
+        </View>
+        <View style={styles.grid}>
+          <View style={styles.itemrow}>
+            <TouchableOpacity>
+              
+            </TouchableOpacity>
+          </View>
+
+        </View>
+
     </View>
     );
   }
